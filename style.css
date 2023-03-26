@@ -1,11 +1,12 @@
-/* TEST CSS COMMENT*/
-
 h1 {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 
 .robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;	
 }
 
 .head, 
@@ -26,7 +27,7 @@ h1 {
 } 
 
 .eyes {
-	
+
 }
 
 .head:hover {
@@ -50,9 +51,25 @@ h1 {
 	margin-right: 10px; 
 } 
 
+.left_arm:hover {
+	-webkit-transform: rotate(100deg);
+    -moz-transform: rotate(100deg);
+    -o-transform: rotate(100deg);
+    -ms-transform: rotate(100deg);
+    transform: rotate(100deg);
+}
+
 .right_arm { 
 	margin-left: 10px; 
 } 
+
+.right_arm:hover {
+	-webkit-transform: rotate(-100deg);
+    -moz-transform: rotate(-100deg);
+    -o-transform: rotate(-100deg);
+    -ms-transform: rotate(-100deg);
+    transform: rotate(-100deg);
+}
 
 .torso { 
 	width: 200px; 
@@ -60,12 +77,15 @@ h1 {
 	border-radius: 0 0 50px 50px; 
 } 
 
+.torso:hover{
+	height: 150px;
+}
+
 .lower_body { 
 	width: 200px; 
 	height: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
-
 } 
 
 .left_leg, .right_leg { 
@@ -86,9 +106,20 @@ h1 {
     transform: rotate(20deg);
 }
 
-.right_leg { 
-	margin-left: 30px; 
+.right_leg:hover {
+	-webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
 }
+
+
+.right_leg { 
+	margin-top: -120px;
+	margin-left: 110px; 
+}
+
 
 .left_eye, .right_eye { 
 	width: 20px; 
@@ -107,8 +138,8 @@ h1 {
 
 .right_eye { 
 	position: relative; 
-	top: 100px; 
-	left: 120px; 
+	top: 80px; 
+	left: 140px; 
 }
 
 
